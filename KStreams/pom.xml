@@ -95,7 +95,7 @@
 				<artifactId>docker-maven-plugin</artifactId> 
 				<version>0.4.11</version>			
 				<configuration>
-					<imageName>667643/exampledemo</imageName>
+					<imageName>667643/kafkastreams</imageName>
 					<dockerDirectory>${basedir}/src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
