@@ -1,0 +1,24 @@
+This is an application which uses Kafka Streams in Spring Boot .
+
+Description : There are two Tables in the Database.Order placed and Order History
+
+	An order once placed and stored in the Order table(First Database), sends a stream event where in a Listener would need to be able to pick this order 
+	from queue and load the data  in the Order History DB (a Second database)
+	
+Pojos: 
+	1. Order.java for storing Order data
+	2. OrderHistory.java for storing Order History table data
+	
+Repositories:
+	1. OrderRepo.java : Repository  for Order table
+	2. OrderHistoryRepo.java : Repository for OrderHistory Table
+
+Controller:
+	Controller.java : This defines methods mapped for the Get and Post methods
+
+Configuration:
+	1. ProducerConfiguration.java : This defines configurations for the records that sent by Producer.
+	2. Sender : This defines a send method for sending the data to the topic
+
+	
+
